@@ -10,7 +10,9 @@ const Home=()=> {
 
 <div className='mainhome'>
 
+
 <div className='topheader'>
+
 <div className='topheaderleft'>
     left
 </div>
