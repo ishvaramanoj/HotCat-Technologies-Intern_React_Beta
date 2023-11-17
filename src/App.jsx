@@ -1,6 +1,6 @@
-
 import './App.css'
 import React from 'react'
+import Home from './Components/Pages/Home/Home'
 
 function App() {
  
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div>
-        italia
+        <Home/>
 
        </div>
     </>
