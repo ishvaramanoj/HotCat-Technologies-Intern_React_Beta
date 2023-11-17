@@ -1,0 +1,15 @@
+.topheader{
+    background-color: palevioletred;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+.topheaderleft{
+    background-color: palegreen;
+    width: 1180px;
+}
+.topheaderright{
+    background-color: peru;
+    width: 340px;
+
+}

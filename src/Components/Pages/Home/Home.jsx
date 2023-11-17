@@ -8,10 +8,20 @@ const Home=()=> {
   return (
     <>
 
-    <div className='mainhome'>
-    This is home page
+<div className='mainhome'>
+
+<div className='topheader'>
+<div className='topheaderleft'>
+    left
+</div>
+<div className='topheaderright'>
+    right
+</div>
+
+</div>
+
     
-    </div>
+</div>
 
     </>
   )
