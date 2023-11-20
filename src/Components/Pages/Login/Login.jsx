@@ -20,7 +20,7 @@ Sign Into Your C.M.S
 
 <div id='body'>
  <div className='leftbody'>
-  left body
+  
  </div>
 
  <div className='rightbody'>

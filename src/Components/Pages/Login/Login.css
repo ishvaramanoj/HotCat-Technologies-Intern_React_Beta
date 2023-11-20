@@ -1,11 +1,9 @@
 .mainlogintop{
-    background-color: palegreen;
     height: 100px;
     width: 1510px;
     padding-top: 35px;
 }
 .title{
-    background-color: palevioletred;
     height: 60px;
     width: 500px;
     margin-left: 450px;
@@ -17,14 +15,14 @@
 #body{
     display: flex;
     flex-direction: row;
-    background-color: peachpuff;
     height: 560px;
     width: 1510px;
 }
 .leftbody{
-    background-color: grey;
-    width: 650px;
-    
+    width: 560px;
+    background-image: url(../../../assets/login3.png);
+    border-radius: 10px;
+    margin-left: 30px;
 }
 .username{
     height: 40px;
@@ -32,8 +30,9 @@
     margin-left: 220px;
     width: 400px;
     border-radius: 10px;
-    border: none;
+    border-color: #1F6357;
     text-align: center;
+    border-width: 1px;
 }
 .password{
     height: 40px;
@@ -41,8 +40,10 @@
     margin-left: 220px;
     width: 400px;
     border-radius: 10px;
-    border: none; 
+
     text-align: center;
+    border-width: 1px;
+    border-color: #1F6357;
 }
 .forgot{
     margin-left: 520px;
