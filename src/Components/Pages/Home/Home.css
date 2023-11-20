@@ -7,9 +7,33 @@
 .topheaderleft{
     background-color: palegreen;
     width: 1180px;
+    display: flex;
+    flex-direction: row;
 }
 .topheaderright{
-    background-color: peru;
+    background-color: #50C878;
     width: 340px;
-
+    display: flex;
+    flex-direction: row;
+}
+#loginbtn{
+    color: white;
+    height: 50px;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-color: white;
+}
+#registerbtn{
+    color: white;
+    height: 50px;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 15px; 
+    border-color: white;
+}
+#avatar{
+    src: url(../../../assets/compny.png);
+    background-color: crimson;
+    background-image: url(../../../assets/compny.png);
 }
