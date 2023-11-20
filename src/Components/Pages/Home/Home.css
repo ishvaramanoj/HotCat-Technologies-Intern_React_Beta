@@ -5,13 +5,13 @@
     flex-direction: row;
 }
 .topheaderleft{
-    background-color: #045F5F;
+    background-color: #22CE83;
     width: 1180px;
     display: flex;
     flex-direction: row;
 }
 .topheaderright{
-    background-color: #045F5F;
+    background-color: #22CE83;
     width: 340px;
     display: flex;
     flex-direction: row;
@@ -44,4 +44,26 @@
     margin-left: 100px;
     color: white;
     border: none;
+}
+.mainbody{
+    display: flex;
+    flex-direction: row;
+}
+.mainbodyleft{
+    background-color: palevioletred;
+    width: 800px;
+    height: 610px;
+}
+.mainbodyright{
+    
+    width: 750px;
+}
+.homepic{
+    background-image: url(../../../assets/homepw1.JPG);
+    width: 550px;
+    margin-left: 150px;
+    height: 530px;
+    margin-top: 60px;
+    border-radius: 10px;
+
 }

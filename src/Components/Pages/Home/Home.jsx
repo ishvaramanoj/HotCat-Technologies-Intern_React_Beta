@@ -39,7 +39,21 @@ const Home=()=> {
 
 </div>
 
+<div className='mainbody'>
+
+<div className='mainbodyleft'>
+  left
+</div>
+<div className='mainbodyright'>
+  <div className='homepic'>
     
+  </div>
+</div>
+
+</div>
+
+
+
 </div>
 
     </>
