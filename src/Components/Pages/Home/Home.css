@@ -1,5 +1,4 @@
 .topheader{
-    background-color: palevioletred;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -93,5 +92,5 @@
     height: 530px;
     margin-top: 60px;
     border-radius: 10px;
-    box-shadow: 2px 2px silver;
+    
 }
