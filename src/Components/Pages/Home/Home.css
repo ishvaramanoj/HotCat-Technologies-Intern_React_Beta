@@ -5,13 +5,13 @@
     flex-direction: row;
 }
 .topheaderleft{
-    background-color: #50C878;
+    background-color: #033E3E;
     width: 1180px;
     display: flex;
     flex-direction: row;
 }
 .topheaderright{
-    background-color: #50C878;
+    background-color: #033E3E;
     width: 340px;
     display: flex;
     flex-direction: row;
