@@ -16,7 +16,13 @@ Sign Into Your C.M.S
 </div>
 
 <div id='body'>
- ssssss
+ <div className='leftbody'>
+  left body
+ </div>
+
+ <div className='rightbody'>
+  right body
+ </div>
 </div>
 
 

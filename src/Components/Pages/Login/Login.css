@@ -1,7 +1,7 @@
 .mainlogintop{
     background-color: palegreen;
     height: 100px;
-    width: 1520px;
+    width: 1510px;
     padding-top: 35px;
 }
 .title{
@@ -18,5 +18,10 @@
     display: flex;
     flex-direction: row;
     background-color: peachpuff;
-    height: 500px;
+    height: 560px;
+    width: 1510px;
+}
+.leftbody{
+    background-color: grey;
+    width: 650px;
 }
