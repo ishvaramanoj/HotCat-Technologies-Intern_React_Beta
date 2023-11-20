@@ -42,12 +42,21 @@ const Home=()=> {
 <div className='mainbody'>
 
 <div className='mainbodyleft'>
-  left
-</div>
-<div className='mainbodyright'>
-  <div className='homepic'>
-    
+
+  <div className='mbltop'>
+    <p className='toppara'>The CRM your team will<br></br>love to use.</p>
+    <p className='botpara'><i>A simple yet powerful CRM for<br></br>businesses selling B2B</i></p>
   </div>
+
+  <div className='mblbottom'>
+    bottom
+  </div>
+
+</div>
+
+<div className='mainbodyright'>
+  <div className='homepic'></div>
+
 </div>
 
 </div>

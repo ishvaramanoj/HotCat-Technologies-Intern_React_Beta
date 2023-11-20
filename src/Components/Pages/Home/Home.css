@@ -54,6 +54,21 @@
     width: 800px;
     height: 610px;
 }
+.mbltop{
+    background-color: greenyellow;
+    height: 280px;
+    width: 580px;
+    margin-left: 140px;
+    margin-top: 100px;
+    text-align: center;
+    color: #1F6357;
+}
+.toppara{
+    font-size: 40px;
+}
+.botpara{
+    font-size: 30px;
+}
 .mainbodyright{
     
     width: 750px;
@@ -65,5 +80,5 @@
     height: 530px;
     margin-top: 60px;
     border-radius: 10px;
-
+    box-shadow: 2px 2px silver;
 }
