@@ -1,16 +1,16 @@
 .topheader{
-    height: 80px;
+    height: 75px;
     display: flex;
     flex-direction: row;
 }
 .topheaderleft{
-    background-color: #22CE83;
+    background-color: #1F6357;
     width: 1180px;
     display: flex;
     flex-direction: row;
 }
 .topheaderright{
-    background-color: #22CE83;
+    background-color: #1F6357;
     width: 340px;
     display: flex;
     flex-direction: row;
