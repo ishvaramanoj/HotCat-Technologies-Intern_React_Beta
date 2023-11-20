@@ -4,16 +4,22 @@
     flex-direction: row;
 }
 .topheaderleft{
-    background-color: #1F6357;
     width: 1180px;
     display: flex;
     flex-direction: row;
+    backdrop-filter: blur(100px);
+    box-shadow: inset 0 0 0 50px rgba(204, 171, 171, 0.08);
+    background-color: rgba(4, 82, 41, 0.15);
+    
 }
 .topheaderright{
     background-color: #1F6357;
     width: 340px;
     display: flex;
     flex-direction: row;
+    backdrop-filter: blur(100px);
+    box-shadow: inset 0 0 0 50px rgba(204, 171, 171, 0.08);
+    background-color: rgba(4, 82, 41, 0.15);
 }
 #loginbtn{
     color: white;
@@ -21,7 +27,8 @@
     width: 150px;
     margin-top: 15px;
     margin-left: 15px;
-    border-color: white;
+    border-color: #1F6357;
+    color: #1F6357;
 }
 #registerbtn{
     color: white;
@@ -29,7 +36,9 @@
     width: 150px;
     margin-top: 15px;
     margin-left: 15px; 
-    border-color: white;
+    border-color: #1F6357;
+    color: #1F6357;
+    
 }
 #avatar{
    border-color: black;
@@ -41,8 +50,8 @@
     width: 150px;
     margin-top: 20px;
     margin-left: 100px;
-    color: white;
     border: none;
+    color: #1F6357;
 }
 .mainbody{
     display: flex;
@@ -74,6 +83,10 @@
     margin-top: 20px;
     margin-left: 235px;
     border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0 0 0 50px rgba(255,255,255,0.08);
+    background-color: rgba(10, 183, 90, 0.15);
+    color: #1F6357;
 }
 #mblbtn2{
     margin-top: 20px;
