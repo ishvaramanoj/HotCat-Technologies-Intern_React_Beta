@@ -14,10 +14,10 @@ const Home=()=> {
 <div className='topheader'>
 
 <div className='topheaderleft'>
-    left
+    leftside
 </div>
 <div className='topheaderright'>
-    right
+    rightside
 </div>
 
 </div>
