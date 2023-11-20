@@ -9,7 +9,7 @@
     flex-direction: row;
     backdrop-filter: blur(100px);
     box-shadow: inset 0 0 0 50px rgba(204, 171, 171, 0.08);
-    background-color: rgba(4, 82, 41, 0.15);
+    background-color: rgba(71, 117, 92, 0.15);
     
 }
 .topheaderright{
@@ -19,7 +19,7 @@
     flex-direction: row;
     backdrop-filter: blur(100px);
     box-shadow: inset 0 0 0 50px rgba(204, 171, 171, 0.08);
-    background-color: rgba(4, 82, 41, 0.15);
+    background-color: rgba(47, 99, 71, 0.15);
 }
 #loginbtn{
     color: white;
@@ -83,10 +83,7 @@
     margin-top: 20px;
     margin-left: 235px;
     border-radius: 16px;
-    backdrop-filter: blur(10px);
-    box-shadow: inset 0 0 0 50px rgba(255,255,255,0.08);
-    background-color: rgba(10, 183, 90, 0.15);
-    color: #1F6357;
+    color: white;
 }
 #mblbtn2{
     margin-top: 20px;
