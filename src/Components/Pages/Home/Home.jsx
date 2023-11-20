@@ -46,8 +46,8 @@ const Home=()=> {
 <div className='mainbodyleft'>
 
   <div className='mbltop'>
-    <p className='toppara'>The CRM your team will<br></br>love to use.</p>
-    <p className='botpara'><i>A simple yet powerful CRM for<br></br>businesses selling B2B</i></p>
+    <p className='toppara'>The Customer Management System your team will<br></br>love to use.</p>
+    <p className='botpara'><i>A simple yet powerful CMS for<br></br>businesses selling B2B</i></p>
   </div>
 
   <div className='mblbottom'>
