@@ -9,6 +9,7 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import Avatar from '@mui/material/Avatar';
 import company2 from '../../../assets/company2.png'
 
+
 const Home=()=> {
 
   

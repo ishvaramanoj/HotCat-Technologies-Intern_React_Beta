@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
 import Home from './Components/Pages/Home/Home'
+import Login from './Components/Pages/Login/Login'
 
 function App() {
  
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
       <div>
-        <Home/>
+        {/* <Home/> */}
+        <Login/>
 
        </div>
     </>
