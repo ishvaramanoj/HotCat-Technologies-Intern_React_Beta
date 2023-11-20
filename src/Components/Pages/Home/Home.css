@@ -50,12 +50,10 @@
     flex-direction: row;
 }
 .mainbodyleft{
-    background-color: palevioletred;
     width: 800px;
     height: 610px;
 }
 .mbltop{
-    background-color: greenyellow;
     height: 280px;
     width: 580px;
     margin-left: 140px;
@@ -68,6 +66,21 @@
 }
 .botpara{
     font-size: 30px;
+}
+.mblbottom{
+    height: 80px;
+}
+#mblbtn1{
+    background-color: #C24641;
+    margin-top: 20px;
+    margin-left: 235px;
+    border-radius: 16px;
+}
+#mblbtn2{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #1F6357;
+    border-radius: 16px;  
 }
 .mainbodyright{
     

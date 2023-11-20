@@ -49,7 +49,8 @@ const Home=()=> {
   </div>
 
   <div className='mblbottom'>
-    bottom
+  <Button id='mblbtn1' variant="contained">TRY IT FOR FREE</Button>
+  <Button id='mblbtn2' variant="outlined">BOOK A DEMO</Button>
   </div>
 
 </div>
