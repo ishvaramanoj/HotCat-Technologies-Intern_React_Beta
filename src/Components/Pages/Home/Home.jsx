@@ -9,12 +9,13 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import Avatar from '@mui/material/Avatar';
 import company2 from '../../../assets/company2.png'
 import { useNavigate } from 'react-router-dom';
-
-
+import Swal from 'sweetalert2'
 
 const Home=()=> {
 
-
+const logs=()=>{
+  Swal.fire("SweetAlert2 is working!");
+}
 
  
 
@@ -39,7 +40,7 @@ const Home=()=> {
 
 <div className='topheaderright'>
     
-<Button id='loginbtn' variant="outlined">LOGIN</Button>
+<Button id='loginbtn' variant="outlined" onClick={()=>{logs()}}>LOGIN</Button>
 <Button id='registerbtn' variant="outlined">REGISTER</Button>
 
 </div>

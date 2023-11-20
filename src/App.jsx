@@ -1,9 +1,9 @@
 import './App.css'
 import React from 'react'
 import Home from './Components/Pages/Home/Home'
-import Login from './Components/Pages/Login/Login'
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import ReactDOM from "react-dom/client";
+import Login from './Components/Pages/Login/Login'
 
 function App() {
  
@@ -13,8 +13,8 @@ function App() {
       <div className='app'>
      
 
-        {/* <Home/> */}
-        <Login/>
+        <Home/>
+        {/* <Login/> */}
         
        </div>
        </>
