@@ -13,20 +13,12 @@ function App() {
       <div className='app'>
      
 
-      <BrowserRouter>
-      <main>
-      <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/login" element={<Login />} />
-
-      </Routes>
-      </main>
-      </BrowserRouter>
+        {/* <Home/> */}
+        <Login/>
         
        </div>
        </>
   )
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
+export default App;
