@@ -56,6 +56,7 @@
 .mainbody{
     display: flex;
     flex-direction: row;
+    position: fixed;
 }
 .mainbodyleft{
     width: 800px;
