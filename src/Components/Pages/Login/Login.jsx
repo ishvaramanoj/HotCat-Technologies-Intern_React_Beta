@@ -4,10 +4,26 @@ import './Login.css'
 
 const Login=()=> {
 
+
   return (
+<>
+<div className='mainlogintop'>
 
-<div>Login</div>
+<div className='title'>
+Sign Into Your C.M.S
+</div>
 
+</div>
+
+<div id='body'>
+ ssssss
+</div>
+
+
+
+
+
+</>
   )
 
 }

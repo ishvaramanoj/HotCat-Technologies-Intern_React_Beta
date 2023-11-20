@@ -1,0 +1,22 @@
+.mainlogintop{
+    background-color: palegreen;
+    height: 100px;
+    width: 1520px;
+    padding-top: 35px;
+}
+.title{
+    background-color: palevioletred;
+    height: 60px;
+    width: 500px;
+    margin-left: 450px;
+    font-size: 50px;
+    text-align: center;
+    color: #1F6357;
+    
+}
+#body{
+    display: flex;
+    flex-direction: row;
+    background-color: peachpuff;
+    height: 500px;
+}
