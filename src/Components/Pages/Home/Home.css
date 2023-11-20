@@ -5,7 +5,7 @@
     flex-direction: row;
 }
 .topheaderleft{
-    background-color: palegreen;
+    background-color: #50C878;
     width: 1180px;
     display: flex;
     flex-direction: row;
@@ -33,7 +33,16 @@
     border-color: white;
 }
 #avatar{
-    src: url(../../../assets/compny.png);
-    background-color: crimson;
-    background-image: url(../../../assets/compny.png);
+   border-color: black;
+   margin-top: 20px;
+   margin-left: 20px;
+   background-color: coral;
+}
+#leftheaderbtns{
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 100px;
+    color: white;
+    border: none;
 }

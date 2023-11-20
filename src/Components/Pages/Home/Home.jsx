@@ -7,6 +7,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import CallIcon from '@mui/icons-material/Call';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import Avatar from '@mui/material/Avatar';
+import company2 from '../../../assets/company2.png'
 
 const Home=()=> {
 
@@ -20,11 +21,11 @@ const Home=()=> {
 <div className='topheader'>
 
 <div className='topheaderleft'>
-<Avatar id='avatar'alt="COMPANY"/>
-<Button id='aboutbtn' variant="outlined">ABOUT<InfoIcon/></Button>
-<Button id='pricingbtn' variant="outlined">PRICING<AttachMoneyIcon/></Button>
-<Button id='contactbtn' variant="outlined">CONTACT<CallIcon/></Button>
-<Button id='supportbtn' variant="outlined">SUPPORT<SupportAgentIcon/></Button>
+<Avatar id='avatar'alt="COMPANY" src={company2}/>
+<Button id='leftheaderbtns' variant="outlined">ABOUT<InfoIcon/></Button>
+<Button id='leftheaderbtns' variant="outlined">PRICING<AttachMoneyIcon/></Button>
+<Button id='leftheaderbtns' variant="outlined">CONTACT<CallIcon/></Button>
+<Button id='leftheaderbtns' variant="outlined">SUPPORT<SupportAgentIcon/></Button>
 </div>
 
 
