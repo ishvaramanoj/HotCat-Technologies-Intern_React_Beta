@@ -8,11 +8,15 @@ import CallIcon from '@mui/icons-material/Call';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import Avatar from '@mui/material/Avatar';
 import company2 from '../../../assets/company2.png'
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Home=()=> {
 
-  
+
+
+ 
 
 
   return (
