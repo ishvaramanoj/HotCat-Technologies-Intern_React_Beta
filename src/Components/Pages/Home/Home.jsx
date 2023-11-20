@@ -11,6 +11,8 @@ import company2 from '../../../assets/company2.png'
 
 const Home=()=> {
 
+  
+
 
   return (
     <>
