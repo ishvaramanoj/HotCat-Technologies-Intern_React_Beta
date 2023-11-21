@@ -14,3 +14,7 @@
     color: #1F6357;
     font-size: 40px;
 }
+.regbodybottom{
+    display: flex;
+    flex-direction: row;
+}

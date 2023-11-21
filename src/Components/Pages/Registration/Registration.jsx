@@ -18,7 +18,16 @@ const Registration=()=> {
 </div>
 
 <div className='regbodybottom'>
-bottomcorner
+
+<div className='regbdleft'>
+LEFT
+</div>
+
+<div className='regbdright'>
+RIGHT
+</div>
+
+
 </div>
 
 </div>
