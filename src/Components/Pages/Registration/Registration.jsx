@@ -12,15 +12,21 @@ const Registration=()=> {
 <>
 
  <div className='regbody'>
-
 <div className='regbodytop'>
 <p className='regt'>Create Your C.M.S Account</p>
 </div>
 
 <div className='regbodybottom'>
-
 <div className='regbdleft'>
-LEFT
+
+<div className='lt'>
+PERSONAL DATA
+</div>
+
+<div className='lb'>
+body here
+</div>
+
 </div>
 
 <div className='regbdright'>

@@ -18,3 +18,12 @@
     display: flex;
     flex-direction: row;
 }
+.regbdleft{
+    background-color: coral;
+    height: 560px;
+    width: 800px;
+}
+.lt{
+    background-color: #1F6357;
+    height: 40px;
+}
