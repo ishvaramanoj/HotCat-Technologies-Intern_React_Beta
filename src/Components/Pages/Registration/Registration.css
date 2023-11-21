@@ -1,5 +1,5 @@
 .regbody{
-   background-color: palevioletred;
+   background-color: whitesmoke;
    height: 640px;
    width: 1480px;
    margin-top: 20px;
@@ -24,8 +24,13 @@
     width: 800px;
 }
 .regbdright{
-    background-color: aqua;
+    background-color: #E5E4E2;
     width: 680px;
+    height: 450px;
+    border-radius: 12px;
+    border-color: black;
+    margin-top: 20px;
+    
 }
 .lt{
     background-color: whitesmoke;
@@ -36,11 +41,11 @@
     border-radius: 12px;
 }
 .lr{
-    background-color: orchid;
     height: 40px;
     color: #1F6357;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 5px;
+    text-align: center;
 }
 .nameid{
 margin-left: 45px;
@@ -72,7 +77,6 @@ padding-top: 4px;
     margin-top: 35px;
     height: 64px;
     color: #1F6357;
-    background-color: cornflowerblue;   
 }
 #outlined-basic{
     margin-left: 20px; 
