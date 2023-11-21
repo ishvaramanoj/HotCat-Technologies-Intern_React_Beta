@@ -2,6 +2,7 @@ import * as React from 'react';
 import './Registration.css'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 const Registration=()=> {
 
@@ -79,9 +80,11 @@ PERSONAL DATA
 </div>
 
 <div className='regbdright'>
+
 <div className='lr'>
 LOGIN DATA
 </div>
+
 <div className='lb2'>
 <Box className='logid'>
 <TextField  className='lgbox' id="username" label="Username" variant="outlined" />
@@ -99,6 +102,8 @@ LOGIN DATA
 <TextField  className='lgbox' id="confirmpassword" label="Confirm Password" variant="outlined" />
 </Box>
 </div>
+
+<Button id='submitbtn' variant="contained">SUBMIT</Button>
 
 </div>
 
