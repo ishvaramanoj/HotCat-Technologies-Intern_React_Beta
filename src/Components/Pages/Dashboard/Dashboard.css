@@ -1,5 +1,5 @@
 .maindashboardtop{
-   background-color: burlywood;
+   background-color: #307D7E;
    height: 70px;
    display: flex;
    flex-direction: row;
@@ -35,10 +35,10 @@
 #cstactionbtn{
     height: 40px;
     width: 200px;
-    background-color: #00A36C;
+    background-color: #C24641;
 }
 .maindashboardbottom{
-    background-color: cornflowerblue;
+    background-color: #E5E4E2;
     height: 630px;
 }
 .table{
