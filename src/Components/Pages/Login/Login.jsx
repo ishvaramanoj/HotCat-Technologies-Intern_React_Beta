@@ -13,7 +13,7 @@ const Login=()=> {
 <div className='mainlogintop'>
 
 <div className='title'>
-Sign Into Your C.M.
+Sign Into Your C.M.S
 </div>
 
 </div>
