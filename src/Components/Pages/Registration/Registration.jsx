@@ -24,7 +24,12 @@ PERSONAL DATA
 </div>
 
 <div className='lb'>
-body here
+<Box className='nameid'>
+<TextField className='txtbox' id="name" label="Name" variant="outlined" />
+</Box>
+<Box className='nameid'>
+<TextField className='txtbox' id="address" label="Address" variant="outlined" />
+</Box>
 </div>
 
 </div>

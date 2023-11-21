@@ -27,3 +27,20 @@
     background-color: #1F6357;
     height: 40px;
 }
+.nameid{
+margin-left: 45px;
+margin-top: 4px;
+}
+.txtbox{
+    width: 320px;
+}
+.lb{
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    height: 64px;
+}
+#outlined-basic{
+    margin-left: 20px; 
+}
