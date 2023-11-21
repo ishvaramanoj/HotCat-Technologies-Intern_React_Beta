@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import Login from './Components/Pages/Login/Login'
 import Registration from './Components/Pages/Registration/Registration';
+import Dashboard from './Components/Pages/Dashboard/Dashboard';
 
 function App() {
  
@@ -15,8 +16,9 @@ function App() {
      
 
         {/* <Home/> */}
-        <Login/>
+        {/* <Login/> */}
         {/* <Registration/> */}
+        <Dashboard/>
         
        </div>
        </>
