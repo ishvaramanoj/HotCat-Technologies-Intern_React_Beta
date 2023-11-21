@@ -83,6 +83,13 @@ PERSONAL DATA
 <div className='lr'>
 LOGIN DATA
 </div>
+
+<div className='lb2'>
+<Box className='logid'>
+<TextField className='lgbox' id="username" label="Username" variant="outlined" />
+</Box>
+</div>
+
 </div>
 
 
