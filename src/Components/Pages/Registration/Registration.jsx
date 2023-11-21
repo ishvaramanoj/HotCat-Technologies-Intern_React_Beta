@@ -3,7 +3,6 @@ import './Registration.css'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-
 const Registration=()=> {
 
 
@@ -83,10 +82,21 @@ PERSONAL DATA
 <div className='lr'>
 LOGIN DATA
 </div>
+<div className='lb2'>
+<Box className='logid'>
+<TextField  className='lgbox' id="username" label="Username" variant="outlined" />
+</Box>
+</div>
 
 <div className='lb2'>
 <Box className='logid'>
-<TextField className='lgbox' id="username" label="Username" variant="outlined" />
+<TextField  className='lgbox' id="password" label="Password" variant="outlined" />
+</Box>
+</div>
+
+<div className='lb2'>
+<Box className='logid'>
+<TextField  className='lgbox' id="confirmpassword" label="Confirm Password" variant="outlined" />
 </Box>
 </div>
 
