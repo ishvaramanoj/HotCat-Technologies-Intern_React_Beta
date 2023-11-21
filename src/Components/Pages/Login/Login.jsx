@@ -27,7 +27,7 @@ Sign Into Your C.M.S
 
  <input  type='text' className='username'  placeholder= 'Username' ></input><br></br>
  <input type='password' className='password' placeholder='Password'></input><br></br>
- <p className='forgot'>Forgot Password</p>
+ <p className='forgot'><a href=''>Forgot Password</a></p>
 
  <Button id='loginbutton' variant="contained">LOGIN</Button>
 

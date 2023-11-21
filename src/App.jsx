@@ -13,8 +13,8 @@ function App() {
       <div className='app'>
      
 
-        <Home/>
-        {/* <Login/> */}
+        {/* <Home/> */}
+        <Login/>
         
        </div>
        </>
