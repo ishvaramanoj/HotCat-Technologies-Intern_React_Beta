@@ -21,8 +21,10 @@ const Dashboard=()=> {
 <Button id='cstactionbtn' variant="contained" startIcon={<AddReactionIcon />}>Customer Action</Button> 
 </div>
 
+</div>
 
-
+<div className='maindashboardbottom'>
+bottom
 </div>
 
 </>
