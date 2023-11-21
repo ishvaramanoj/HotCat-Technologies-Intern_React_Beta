@@ -41,4 +41,12 @@
     background-color: cornflowerblue;
     height: 630px;
 }
+.table{
+    background-color: aqua;
+    position: fixed;
+    margin-top: 10px;
+    width: 1400px;
+    margin-left: 50px;
+    height: 600px;
+}
 

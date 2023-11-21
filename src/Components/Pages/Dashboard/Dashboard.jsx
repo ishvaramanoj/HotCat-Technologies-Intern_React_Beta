@@ -24,7 +24,9 @@ const Dashboard=()=> {
 </div>
 
 <div className='maindashboardbottom'>
-bottom
+<div className='table'>
+table
+</div>
 </div>
 
 </>
