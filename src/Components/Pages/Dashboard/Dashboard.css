@@ -1,3 +1,40 @@
-.maindashboard{
-   
+.maindashboardtop{
+   background-color: burlywood;
+   height: 70px;
+   display: flex;
+   flex-direction: row;
 }
+.topleft{
+    background-color: whitesmoke;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    color: #1F6357;
+    box-shadow: 2px 2px#45706a ;
+    border-radius: 5px;
+}
+.topright{
+    margin-left: 780px;
+    width: 190px;
+    height: 45px;
+    margin-top: 15px;
+}
+.topright2{
+    width: 200px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+ #cstviewbtn{
+    height: 40px;
+    background-color: #00A36C;
+}
+#cstactionbtn{
+    height: 40px;
+    width: 200px;
+    background-color: #00A36C;
+}
+
