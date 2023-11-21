@@ -31,31 +31,29 @@ const columns = [
     },
 
     {
-      id: 'density',
-      label: 'Density',
+      id: 'telephone',
+      label: 'Telephone',
       minWidth: 170,
       align: 'right',
-      format: (value) => value.toFixed(2),
     },
   ];
   
-  function createData(name, address, age, nic) {
+  function createData(name, address, age, nic,telephone) {
     
-    return { name, address, age, nic,};
+    return { name, address, age, nic,telephone};
   }
   
   const rows = [
-    createData('David', 'Buckingham,England', 25, 942343000),
-    createData('Aaron', 'Auckland,NewZealand', 35, 985012083),
-    createData('Jonathan', 'Dublin,Ireland', 40, 874562345),
-    createData('Peter', 'Texas,USA', 33, 768975555),
-    createData('Stalin', 'Moscow,Russia', 29, 875642000),
-    createData('Ballack', 'Berlin,Germany', 36, 745674000),
-    createData('Xang', 'Beijing,China', 37, 987651000),
-    createData('Sammy', 'Oslo,Norway', 39, 765643000),
-    createData('Escobar', 'Medellin,Colombia', 28, 933451000),
-    createData('Takeshi', 'Tokyo,Japan', 45, 875643999),
-   
+    createData('David', 'Buckingham,England', 25, 942343000,94768968561),
+    createData('Aaron', 'Auckland,NewZealand', 35, 985012083,61768348531),
+    createData('Jonathan', 'Dublin,Ireland', 40, 874562345,34768348765),
+    createData('Peter', 'Texas,USA', 33, 768975555,11768349855),
+    createData('Stalin', 'Moscow,Russia', 29, 875642000,25768341000),
+    createData('Ballack', 'Berlin,Germany', 36, 745674000,98768343400),
+    createData('Xang', 'Beijing,China', 37, 987651000,34768343433),
+    createData('Sammy', 'Oslo,Norway', 39, 765643000,44768342222),
+    createData('Escobar', 'Medellin,Colombia', 28,765643000,81768342456),
+    createData('Takeshi', 'Tokyo,Japan', 45, 875643999,51768342675),
   ];
 
 
