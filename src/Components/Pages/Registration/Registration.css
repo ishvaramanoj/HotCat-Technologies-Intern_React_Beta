@@ -6,3 +6,11 @@
    margin-left: 20px;
    border-radius: 12px;
 }
+.regbodytop{
+    background-color: palegreen;
+    height: 80px;
+}
+.regt{
+    color: #1F6357;
+    font-size: 40px;
+}

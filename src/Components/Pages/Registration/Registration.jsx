@@ -14,7 +14,7 @@ const Registration=()=> {
  <div className='regbody'>
 
 <div className='regbodytop'>
-topcorner
+<p className='regt'>Create Your C.M.S Account</p>
 </div>
 
 <div className='regbodybottom'>
