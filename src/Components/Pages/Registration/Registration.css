@@ -9,6 +9,7 @@
 .regbodytop{
     background-color: whitesmoke;
     height: 80px;
+    border-radius: 12px;
 }
 .regt{
     color: #1F6357;
@@ -22,6 +23,7 @@
     background-color: whitesmoke;
     height: 560px;
     width: 800px;
+    border-radius: 12px;
 }
 .regbdright{
     background-color: #E5E4E2;
@@ -30,7 +32,7 @@
     border-radius: 12px;
     border-color: black;
     margin-top: 20px;
-    
+    margin-right: 10px;
 }
 .lt{
     background-color: whitesmoke;
@@ -85,5 +87,5 @@ padding-top: 4px;
     background-color: #1F6357;
     margin-top: 30px;
     width: 150px;
-    margin-left: 250px;
+    margin-left: 265px;
 }
