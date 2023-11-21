@@ -35,6 +35,13 @@
     margin-top: 10px;
     border-radius: 12px;
 }
+.lr{
+    background-color: orchid;
+    height: 40px;
+    color: #1F6357;
+    margin-top: 5px;
+    margin-left: 5px;
+}
 .nameid{
 margin-left: 45px;
 margin-top: 4px;

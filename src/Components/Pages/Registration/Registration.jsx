@@ -80,7 +80,9 @@ PERSONAL DATA
 </div>
 
 <div className='regbdright'>
-RIGHT
+<div className='lr'>
+LOGIN DATA
+</div>
 </div>
 
 
