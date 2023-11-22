@@ -11,10 +11,13 @@ import company2 from '../../../assets/company2.png'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'
 
+
 const Home=()=> {
 
+const navigate = useNavigate()
+
 const logs=()=>{
-  Swal.fire("SweetAlert2 is working!");
+  navigate('/Login');
 }
 
  
