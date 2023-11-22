@@ -14,6 +14,13 @@ const lognow=()=>{
   let Username =  document.getElementById("txtusername").value;
   let Password =  document.getElementById("txtpassword").value;
   if(Username=='customer'&&Password=='123'){
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Login Success",
+      showConfirmButton: false,
+      timer: 1500
+    });
     navigate('/Dashboard');
   }else{
     Swal.fire({
