@@ -11,7 +11,15 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
+import UpdateIcon from '@mui/icons-material/Update';
+import Swal from 'sweetalert2'
 
+
+const alert=()=>{
+  Swal.fire("SweetAlert2 is working!");
+}
 
 const columns = [
     { id: 'name', label: 'Name', minWidth: 170 },
@@ -36,24 +44,49 @@ const columns = [
       minWidth: 170,
       align: 'right',
     },
+    {
+      id: 'update',
+      label: 'Update',
+      minWidth: 30,
+      align: 'right',
+    },
   ];
   
-  function createData(name, address, age, nic,telephone) {
+  function createData(name, address, age, nic,telephone,update) {
     
-    return { name, address, age, nic,telephone};
+    return { name, address, age, nic,telephone,update};
   }
   
   const rows = [
-    createData('David', 'Buckingham,England', 25, 942343000,94768968561),
-    createData('Aaron', 'Auckland,NewZealand', 35, 985012083,61768348531),
-    createData('Jonathan', 'Dublin,Ireland', 40, 874562345,34768348765),
-    createData('Peter', 'Texas,USA', 33, 768975555,11768349855),
-    createData('Stalin', 'Moscow,Russia', 29, 875642000,25768341000),
-    createData('Ballack', 'Berlin,Germany', 36, 745674000,98768343400),
-    createData('Xang', 'Beijing,China', 37, 987651000,34768343433),
-    createData('Sammy', 'Oslo,Norway', 39, 765643000,44768342222),
-    createData('Escobar', 'Medellin,Colombia', 28,765643000,81768342456),
-    createData('Takeshi', 'Tokyo,Japan', 45, 875643999,51768342675),
+    createData('David', 'Buckingham,England', 25, 942343000,94768968561, <IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Aaron', 'Auckland,NewZealand', 35, 985012083,61768348531,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Jonathan', 'Dublin,Ireland', 40, 874562345,34768348765,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Peter', 'Texas,USA', 33, 768975555,11768349855,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Stalin', 'Moscow,Russia', 29, 875642000,25768341000,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Ballack', 'Berlin,Germany', 36, 745674000,98768343400,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Xang', 'Beijing,China', 37, 987651000,34768343433,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Sammy', 'Oslo,Norway', 39, 765643000,44768342222,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Escobar', 'Medellin,Colombia', 28,765643000,81768342456,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
+
+    createData('Takeshi', 'Tokyo,Japan', 45, 875643999,51768342675,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    </IconButton>),
   ];
 
 
