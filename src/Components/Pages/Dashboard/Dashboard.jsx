@@ -134,7 +134,7 @@ const Dashboard=()=> {
 </div>
 
 <div className='topright2'>
-<Button id='cstactionbtn' variant="contained" startIcon={<AddReactionIcon />}>Customer Action</Button> 
+<Button id='cstactionbtn' variant="contained" startIcon={<AddReactionIcon />}>Logout</Button> 
 </div>
 
 </div>
