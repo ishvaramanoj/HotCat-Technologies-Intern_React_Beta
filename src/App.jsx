@@ -1,11 +1,32 @@
-import './App.css'
 import React from 'react'
+import './App.css'
 import Home from './Components/Pages/Home/Home'
 import ReactDOM from "react-dom/client";
 import Login from './Components/Pages/Login/Login'
 import Registration from './Components/Pages/Registration/Registration';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
-// import { BrowserRouter, Routes, Route} from "react-router-dom";
+import {createBrowserRouter,RouterProvider,Route,Link,} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+{
+  path:"/",
+  element:<Home/>,
+},
+{
+  path:"/login",
+  element:<Login/>,
+},
+{
+  path:"/Registration",
+  element:<Registration/>,
+},
+{
+  path:"/Dashboard",
+  element:<Dashboard/>,
+}
+
+]);
 
 function App() {
  
@@ -13,18 +34,10 @@ function App() {
   return (
     
       <div className='app'>
-     {/* <BrowserRouter>
-     <Routes>
-     <Route index element={<Home />}/>
-     <Route path="/home" element={<Home />}/>
-     </Routes>
-     </BrowserRouter> */}
 
-        <Home/>
-        {/* <Login/> */}
-        {/* <Registration/> */}
-        {/* <Dashboard/> */}
-        
+        <RouterProvider router={router}/>
+
+
        </div>
        
   )
