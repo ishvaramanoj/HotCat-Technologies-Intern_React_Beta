@@ -2,7 +2,6 @@ import * as React from 'react';
 import './Dashboard.css'
 import Button from '@mui/material/Button';
 import GroupIcon from '@mui/icons-material/Group';
-import AddReactionIcon from '@mui/icons-material/AddReaction';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -14,6 +13,7 @@ import TableRow from '@mui/material/TableRow';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import UpdateIcon from '@mui/icons-material/Update';
+import LogoutIcon from '@mui/icons-material/Logout';
 import Swal from 'sweetalert2'
 
 
@@ -134,7 +134,7 @@ const Dashboard=()=> {
 </div>
 
 <div className='topright2'>
-<Button id='cstactionbtn' variant="contained" startIcon={<AddReactionIcon />}>Logout</Button> 
+<Button id='cstactionbtn' variant="contained" startIcon={<LogoutIcon />}>Logout</Button> 
 </div>
 
 </div>
