@@ -14,12 +14,10 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import UpdateIcon from '@mui/icons-material/Update';
 import LogoutIcon from '@mui/icons-material/Logout';
-import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom';
 
 
-const alert=()=>{
-  Swal.fire("SweetAlert2 is working!");
-}
+
 
 const columns = [
     { id: 'name', label: 'Name', minWidth: 170 },
@@ -109,7 +107,11 @@ const columns = [
 
 const Dashboard=()=> {
 
+const navigate = useNavigate()
 
+const logout=()=>{
+  navigate('/');
+}
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(10);
   
@@ -134,7 +136,7 @@ const Dashboard=()=> {
 </div>
 
 <div className='topright2'>
-<Button id='cstactionbtn' variant="contained" startIcon={<LogoutIcon />}>Logout</Button> 
+<Button id='cstactionbtn' variant="contained" startIcon={<LogoutIcon />} onClick={()=>{logout()}}>Logout</Button> 
 </div>
 
 </div>
