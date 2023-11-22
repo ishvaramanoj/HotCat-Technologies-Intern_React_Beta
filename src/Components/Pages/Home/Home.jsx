@@ -9,7 +9,7 @@ import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import Avatar from '@mui/material/Avatar';
 import company2 from '../../../assets/company2.png'
 import { useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2'
+
 
 
 const Home=()=> {
@@ -18,6 +18,9 @@ const navigate = useNavigate()
 
 const logs=()=>{
   navigate('/Login');
+}
+const reg=()=>{
+  navigate('/Registration');
 }
 
  
@@ -44,7 +47,7 @@ const logs=()=>{
 <div className='topheaderright'>
     
 <Button id='loginbtn' variant="outlined" onClick={()=>{logs()}}>LOGIN</Button>
-<Button id='registerbtn' variant="outlined">REGISTER</Button>
+<Button id='registerbtn' variant="outlined"  onClick={()=>{reg()}}>REGISTER</Button>
 
 </div>
 

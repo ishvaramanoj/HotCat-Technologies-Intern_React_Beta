@@ -4,7 +4,10 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
+
+
 const Registration=()=> {
+
 
 
   return (
@@ -103,7 +106,7 @@ LOGIN DATA
 </Box>
 </div>
 
-<Button id='submitbtn' variant="contained">SUBMIT</Button>
+<Button id='submitbtn' variant="contained" >SUBMIT</Button>
 
 </div>
 
