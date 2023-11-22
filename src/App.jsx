@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import Home from './Components/Pages/Home/Home'
-import ReactDOM from "react-dom/client";
 import Login from './Components/Pages/Login/Login'
 import Registration from './Components/Pages/Registration/Registration';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
