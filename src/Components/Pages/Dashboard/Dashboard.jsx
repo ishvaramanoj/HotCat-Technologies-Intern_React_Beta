@@ -165,15 +165,22 @@ var obj={
   age:Age,
   telephone:Telephone,
 }
-axios.post("http://127.0.0.1:8000/api/customer",{
+axios({
+  method: 'post',
+  url: 'http://127.0.0.1:8000/api/customer',
+  data: {obj}
+}).then((res) => {console.log(res);
+console.log(res.data);
+});
+// axios.post("http://127.0.0.1:8000/api/customer",{
           
-  method:"POST",
-  headers:{
-  'Content-type': 'application/json'
-          },
-  body:JSON.stringify(obj)
-  }).then((response) => console.log(response))
-  .catch((error) => console.log(error));
+//   method:"POST",
+//   headers:{
+//   'Content-type': 'application/json'
+//           },
+//   body:JSON.stringify(obj)
+//   }).then((response) => console.log(response))
+//   .catch((error) => console.log(error));
 
 }
 
