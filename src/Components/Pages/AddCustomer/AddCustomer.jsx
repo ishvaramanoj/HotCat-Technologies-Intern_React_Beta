@@ -1,11 +1,11 @@
 import React from 'react'
-
+import './AddCustomer.css'
 
 
 const AddCustomer = () => {
 
 
-  return (
+return (
 
 <div className='mainmodal'>
 AddCustomer
