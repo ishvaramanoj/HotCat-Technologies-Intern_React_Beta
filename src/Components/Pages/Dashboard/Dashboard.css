@@ -50,4 +50,8 @@
     height: 480px;
     border-radius: 12px;
 }
+.popuptitle{
+    background-color: palevioletred;
+    text-align: center;
+}
 
