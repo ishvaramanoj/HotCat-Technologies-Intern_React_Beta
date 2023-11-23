@@ -18,6 +18,7 @@ import { useNavigate } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import TextField from '@mui/material/TextField';
 
 
 
@@ -164,7 +165,22 @@ const logout=()=>{
             Add a Customer here
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }} className='popupbody'>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            
+          <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <TextField id="customer_id" label="Customer Id" variant="outlined" />
+      <TextField id="name" label="Name" variant="outlined" />
+      <TextField id="address" label="Address" variant="outlined" />
+      <TextField id="age" label="Age" variant="outlined" />
+      <TextField id="telephone" label="Telephone" variant="outlined" />
+    </Box>
+
           </Typography>
         </Box>
       </Modal>
