@@ -51,12 +51,26 @@
     border-radius: 12px;
 }
 .popuptitle{
-    background-color: palevioletred;
+    background-color: #E5E4E2;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px silver;
+    color: #1F6357;
 }
 .popupbody{
-    background-color: peachpuff;
-    height: 400px;
+    background-color: #E5E4E2;
+    height: 420px;
     text-align: center;
+    color: #1F6357;
+    border-radius: 10px;
+    box-shadow: 2px 2px silver;
+}
+#addcustomerbtn{
+    background-color: #00A36C;
+    color: white;
+}
+#modalbox{
+    border-radius: 10px;
+    border: none;
 }
 

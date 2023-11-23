@@ -160,7 +160,7 @@ const logout=()=>{
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={style} id='modalbox'>
           <Typography id="modal-modal-title" variant="h6" component="h2" className='popuptitle'>
             Add a Customer here
           </Typography>
@@ -179,6 +179,9 @@ const logout=()=>{
       <TextField id="address" label="Address" variant="outlined" />
       <TextField id="age" label="Age" variant="outlined" />
       <TextField id="telephone" label="Telephone" variant="outlined" />
+
+      <Button id='addcustomerbtn' variant="contained">Add Customer</Button>
+
     </Box>
 
           </Typography>
