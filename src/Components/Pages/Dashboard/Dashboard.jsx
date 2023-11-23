@@ -149,6 +149,17 @@ const logout=()=>{
     };
 
 
+const AddCustomer = () =>{
+
+let Customer_Id = document.getElementById('customer_id').value;
+let Name = document.getElementById('name').value;
+let Address = document.getElementById('address').value;
+let Age = document.getElementById('age').value;
+let Telephone = document.getElementById('telephone').value;
+
+}
+
+
   return (
 <>
 
