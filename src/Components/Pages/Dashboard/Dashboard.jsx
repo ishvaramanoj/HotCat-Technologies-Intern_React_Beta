@@ -157,6 +157,23 @@ let Address = document.getElementById('address').value;
 let Age = document.getElementById('age').value;
 let Telephone = document.getElementById('telephone').value;
 
+var obj={
+  customer_id:Customer_Id,
+  name:Name,
+  address:Address,
+  age:Age,
+  telephone:Telephone,
+}
+axios.post("http://127.0.0.1:8000/api/customer",{
+          
+  method:"POST",
+  headers:{
+  'Content-type': 'application/json'
+          },
+  body:JSON.stringify(obj)
+  }).then((response) => console.log(response))
+  .catch((error) => console.log(error));
+
 }
 
 
@@ -191,7 +208,7 @@ let Telephone = document.getElementById('telephone').value;
       <TextField id="age" label="Age" variant="outlined" />
       <TextField id="telephone" label="Telephone" variant="outlined" />
 
-      <Button id='addcustomerbtn' variant="contained">Add Customer</Button>
+      <Button id='addcustomerbtn' variant="contained" onClick={()=>{AddCustomer()}}>Add Customer</Button>
 
     </Box>
 
