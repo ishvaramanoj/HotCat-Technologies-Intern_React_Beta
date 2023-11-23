@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 
 
 
-const Registration=()=> {
+const Registration = ()=> {
 
 
 
@@ -48,6 +48,7 @@ PERSONAL DATA
 <Box className='nameid'>
 <TextField className='txtbox' id="provincestate" label="Province/State" variant="outlined" />
 </Box>
+
 <Box className='nameid'>
 <TextField className='txtbox' id="zipcode" label="Zip code" variant="outlined" />
 </Box>

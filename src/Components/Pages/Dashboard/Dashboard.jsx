@@ -132,7 +132,7 @@ const logout=()=>{
 <div className='topleft'>C.M.S DASHBOARD</div>
 
 <div className='topright'>
-<Button id='cstviewbtn' variant="contained" startIcon={<GroupIcon />}>Customer View</Button> 
+<Button id='cstviewbtn' variant="contained" startIcon={<GroupIcon />}>Add Customer</Button> 
 </div>
 
 <div className='topright2'>
