@@ -163,7 +163,7 @@ const logout=()=>{
           <Typography id="modal-modal-title" variant="h6" component="h2" className='popuptitle'>
             Add a Customer here
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} className='popupbody'>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography>
         </Box>
