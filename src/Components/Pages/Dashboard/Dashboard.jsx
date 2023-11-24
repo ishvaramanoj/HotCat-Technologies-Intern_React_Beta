@@ -158,20 +158,21 @@ let Address = document.getElementById('address').value;
 let Age = document.getElementById('age').value;
 let Telephone = document.getElementById('telephone').value;
 
-var obj={
+const data={
   customer_id:Customer_Id,
   name:Name,
   address:Address,
   age:Age,
   telephone:Telephone,
 }
-axios({
-  method: 'post',
-  url: 'http://127.0.0.1:8000/api/customer',
-  data: {obj}
-}).then((res) => {console.log(res);
-console.log(res.data);
+console.log(obj);
+axios.post('http://127.0.0.1:8000/api/customer',data)
+.then((response) => {
+  console.log(response);
+}, (error) => {
+  console.log(error);
 });
+
 // axios.post("http://127.0.0.1:8000/api/customer",{
           
 //   method:"POST",
