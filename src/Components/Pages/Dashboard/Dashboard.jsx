@@ -84,7 +84,7 @@ const columns = [
 
  
   
-  const rows = [{name:val.name,address:val.address,age:val.age,nic:val.nic,telephone:val.telephone}
+  const rows = [createData('name','address','age','nic','telephone')
     // createData('David', 'Buckingham,England', 25, 942343000,94768968561, <IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
     // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
     // </IconButton>),
