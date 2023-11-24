@@ -156,7 +156,7 @@ let Customer_Id = document.getElementById('customer_id').value;
 let Name = document.getElementById('name').value;
 let Address = document.getElementById('address').value;
 let Age = document.getElementById('age').value;
-let Nic = '8676768886';
+let Nic = document.getElementById('nic').value;
 let Telephone = document.getElementById('telephone').value;
 
 var obj={
@@ -208,6 +208,7 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
       <TextField id="name" label="Name" variant="outlined" />
       <TextField id="address" label="Address" variant="outlined" />
       <TextField id="age" label="Age" variant="outlined" />
+      <TextField id="nic" label="NIC" variant="outlined" />
       <TextField id="telephone" label="Telephone" variant="outlined" />
 
       <Button id='addcustomerbtn' variant="contained" onClick={()=>{AddCustomer()}}>Add Customer</Button>
