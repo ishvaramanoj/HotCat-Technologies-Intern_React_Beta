@@ -158,7 +158,7 @@ let Address = document.getElementById('address').value;
 let Age = document.getElementById('age').value;
 let Telephone = document.getElementById('telephone').value;
 
-const data={
+var data={
   customer_id:Customer_Id,
   name:Name,
   address:Address,
