@@ -185,9 +185,8 @@ const getCustomers = ()=>{
     address:val.address,
     name:val.name,
     age:val.age,
-              id:'4',
-              nic:'76655678889v',
-              telephone:'099998888',
+    nic:val.nic,
+    telephone:val.telephone,
               })
           })
           setCustomers(array);
