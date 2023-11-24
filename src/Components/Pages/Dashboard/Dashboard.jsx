@@ -169,21 +169,26 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
 
 const getCustomers = ()=>{
 
-  fetch('http://127.0.0.1:8000/api/customer')
-  .then(function (response){
+  fetch('http://127.0.0.1:8000/api/customer', {
+    method: 'Get',
+    headers: {
+      'Accept': 'application/json',
+    }
+  })
+  .then(response => response.json())
+  .then((response)=> {
   console.log(response);
-  const customerData = [response.json()];
   const array = [];
-  customerData.forEach((val)=>{
-  console.log(val)
-  array.push({
-              id:val.id,
-              customer_id:val.customer_id,
-              name:val.name,
-              address:val.address,
-              age:val.age,
-              nic:val.nic,
-              telephone:val.telephone,
+  console.log(response);
+  response.forEach((val)=>{
+  array.push({         
+    address:val.address,
+              age:'78',
+              customer_id:'1',
+              id:'4',
+              name:'jerico',
+              nic:'76655678889v',
+              telephone:'099998888',
               })
           })
           setCustomers(array);
@@ -319,7 +324,7 @@ method: 'DELETE',
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows
+            {customers
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((row) => {
                 return (
