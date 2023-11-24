@@ -183,10 +183,9 @@ const getCustomers = ()=>{
   response.forEach((val)=>{
   array.push({         
     address:val.address,
-              age:'78',
-              customer_id:'1',
+    name:val.name,
+    age:val.age,
               id:'4',
-              name:'jerico',
               nic:'76655678889v',
               telephone:'099998888',
               })
