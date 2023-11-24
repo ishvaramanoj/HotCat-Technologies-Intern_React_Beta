@@ -167,6 +167,7 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
   body:JSON.stringify(obj)
   }).then((response) => response.json())
   .then((json) => console.log(json));
+  getCustomers()
 }
 
 const getCustomers = ()=>{
@@ -229,10 +230,10 @@ fetch("http://127.0.0.1:8000/api/customer")
 
 <div className='topright'>
 <Button id='cstviewbtn' variant="contained" startIcon={<GroupIcon />} onClick={handleOpen}>Add Customer</Button> 
-</div>
 
+</div>
 <div className='topright2'>
-<Button id='cstactionbtn' variant="contained" startIcon={<LogoutIcon />} onClick={()=>{getCustomers()}}>Logout</Button> 
+<Button id='cstactionbtn' variant="contained" startIcon={<LogoutIcon />} onClick={()=>{getCustomers()}}>View Customers</Button> 
 </div>
 
 </div>
@@ -242,7 +243,7 @@ fetch("http://127.0.0.1:8000/api/customer")
 <div className='table'>
 
 <table border={1} class="customermaintable">
-            <tr class="cstbl">
+            <tr className="cstbl">
              <th>ID </th>
               <th>CustomerID </th>
               <th>NAME</th>

@@ -35,14 +35,14 @@
 #cstactionbtn{
     height: 40px;
     width: 200px;
-    background-color: #C24641;
+    background-color: #00A36C;
 }
 .maindashboardbottom{
     background-color: #E5E4E2;
     height: 630px;
 }
 .table{
-    background-color: aqua;
+    background-color: #E5E4E2;
     position: fixed;
     margin-top: 60px;
     width: 1400px;
@@ -72,5 +72,12 @@
 #modalbox{
     border-radius: 10px;
     border: none;
+}
+.customermaintable{
+    color:#1F6357;
+    width: 200px;
+}
+.cstbl{
+    width: 200px;
 }
 
