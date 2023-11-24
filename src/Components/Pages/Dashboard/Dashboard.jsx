@@ -156,33 +156,26 @@ let Customer_Id = document.getElementById('customer_id').value;
 let Name = document.getElementById('name').value;
 let Address = document.getElementById('address').value;
 let Age = document.getElementById('age').value;
+let Nic = '8676768886';
 let Telephone = document.getElementById('telephone').value;
 
-var data={
+var obj={
   customer_id:Customer_Id,
   name:Name,
   address:Address,
   age:Age,
+  nic:Nic,
   telephone:Telephone,
 }
 console.log(obj);
-axios.post('http://127.0.0.1:8000/api/customer',data)
-.then((response) => {
-  console.log(response);
-}, (error) => {
-  console.log(error);
-});
-
-// axios.post("http://127.0.0.1:8000/api/customer",{
-          
-//   method:"POST",
-//   headers:{
-//   'Content-type': 'application/json'
-//           },
-//   body:JSON.stringify(obj)
-//   }).then((response) => console.log(response))
-//   .catch((error) => console.log(error));
-
+fetch("http://127.0.0.1:8000/api/customer/add",{
+  method:"POST",
+  headers:{
+  'Content-type': 'application/json'
+          },
+  body:JSON.stringify(obj)
+  }).then((response) => response.json())
+  .then((json) => console.log(json));
 }
 
 
