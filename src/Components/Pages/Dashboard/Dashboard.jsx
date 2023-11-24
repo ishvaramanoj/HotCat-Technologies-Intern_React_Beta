@@ -20,6 +20,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import {useState} from 'react';
+import axios from 'axios';
 
 
 
@@ -74,44 +75,40 @@ const columns = [
     },
   ];
   
-  // function createData(name, address, age, nic,telephone,update,del) {
+  function createData(name, address, age, nic,telephone,update,del) {
     
-  //   return { name, address, age, nic,telephone,update,del};
-  // }
+    return { name, address, age, nic,telephone,update,del};
+  }
   
 
 
  
   
-    // const left = [setCustomers]
-    // console.log(left);
-  
-  // const rows = [
-  //   createData('David', 'Buckingham,England', 25, 942343000,94768968561, <IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-  //   </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-  //   </IconButton>),
+  const rows = [{name:val.name,address:val.address,age:val.age,nic:val.nic,telephone:val.telephone}
+    // createData('David', 'Buckingham,England', 25, 942343000,94768968561, <IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
+    // </IconButton>),
 
-  //   createData('Aaron', 'Auckland,NewZealand', 35, 985012083,61768348531,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-  //   </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-  //   </IconButton>),
+    // createData('Aaron', 'Auckland,NewZealand', 35, 985012083,61768348531,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
+    // </IconButton>),
 
-  //   createData('Jonathan', 'Dublin,Ireland', 40, 874562345,34768348765,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-  //   </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-  //   </IconButton>),
+    // createData('Jonathan', 'Dublin,Ireland', 40, 874562345,34768348765,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
+    // </IconButton>),
 
-  //   createData('Peter', 'Texas,USA', 33, 768975555,11768349855,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-  //   </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-  //   </IconButton>),
+    // createData('Peter', 'Texas,USA', 33, 768975555,11768349855,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
+    // </IconButton>),
 
-  //   createData('Stalin', 'Moscow,Russia', 29, 875642000,25768341000,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-  //   </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-  //   </IconButton>),
+    // createData('Stalin', 'Moscow,Russia', 29, 875642000,25768341000,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
+    // </IconButton>),
 
-  //   createData('Ballack', 'Berlin,Germany', 36, 745674000,98768343400,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-  //   </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-  //   </IconButton>),
-
-  // ];
+    // createData('Ballack', 'Berlin,Germany', 36, 745674000,98768343400,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
+    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
+    // </IconButton>),
+  ];
 
 
 
@@ -171,14 +168,47 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
 }
 
 const getCustomers = ()=>{
+
+  fetch('http://127.0.0.1:8000/api/customer')
+  .then(function (response){
+  console.log(response);
+  const customerData = [response.json()];
+  const array = [];
+  customerData.forEach((val)=>{
+  console.log(val)
+  array.push({
+              id:val.id,
+              customer_id:val.customer_id,
+              name:val.name,
+              address:val.address,
+              age:val.age,
+              nic:val.nic,
+              telephone:val.telephone,
+              })
+          })
+          setCustomers(array);
+          console.log('yees');
+          console.log(array);
+      })
+      .catch(function (error){
+          console.log(error)
+      })
       
-fetch("http://127.0.0.1:8000/api/customer")
-.then(response => response.json())
-// .then((json) => console.log(json))
-.then(json => setCustomers(json))
-.finally(() => {
-  })
+// fetch("http://127.0.0.1:8000/api/customer")
+// .then(response => response.json())
+// // .then((json) => console.log(json))
+// .then(json => setCustomers(json))
+// .finally(() => {
+//   })
   
+}
+
+const deleteCustomer =()=>{
+let customerDelete = customers[0].id.value;
+fetch("http://192.168.8.142:8070/student/delete/"+customerDelete, {
+method: 'DELETE',
+});
+
 }
 
 
@@ -242,7 +272,7 @@ fetch("http://127.0.0.1:8000/api/customer")
 
 <div className='table'>
 
-<table border={1} class="customermaintable">
+{/* <table border={1} class="customermaintable">
             <tr className="cstbl">
              <th>ID </th>
               <th>CustomerID </th>
@@ -265,14 +295,14 @@ fetch("http://127.0.0.1:8000/api/customer")
                 <th>{customer.nic}</th>
                 <th>{customer.telephone}</th>
                 <th><IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon /></IconButton></th>
-                <th><IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon /></IconButton></th>
+                <th><IconButton onClick={()=>{deleteCustomer(customer.id)}} aria-label="delete" size="large"><DeleteIcon /></IconButton></th>
               </tr>
             ))}
             
-          </table>
+          </table> */}
 
 
-{/* <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+<Paper sx={{ width: '100%', overflow: 'hidden' }}>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -319,7 +349,7 @@ fetch("http://127.0.0.1:8000/api/customer")
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
-    </Paper> */}
+    </Paper>
 
 </div>
 
