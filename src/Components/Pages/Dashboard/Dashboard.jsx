@@ -20,6 +20,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import {useState} from 'react';
+import Swal from 'sweetalert2'
 import {useEffect} from 'react';
 
 
@@ -195,11 +196,29 @@ const getCustomers = ()=>{
 }
 
 const deleteCustomer =(cus_id)=>{
+
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
+    if (result.isConfirmed) {    
 console.log(cus_id);
 let customer_row_id = cus_id;
 fetch("http://127.0.0.1:8000/api/customer/delete/"+customer_row_id, {
 method: 'DELETE',
 });
+Swal.fire({
+      title: "Deleted!",
+      text: "Customer has been deleted.",
+      icon: "success"
+      });
+    }
+  });
 }
 
 
