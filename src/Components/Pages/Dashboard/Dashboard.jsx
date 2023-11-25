@@ -288,11 +288,11 @@ method: 'DELETE',
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} id='modalbox'>
+        <Box sx={style} id='addressbox'>
           <Typography id="modal-modal-title" variant="h6" component="h2" className='addresstitle'>
             Customer Update
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }} className='addressbody'>
+          <Typography id="modal-modal-descriptio" sx={{ mt: 2 }} className='addressbody'>
             
           <Box
       component="form"
@@ -307,7 +307,7 @@ method: 'DELETE',
       <TextField id="address_three" label="Address 3" variant="outlined" />
       
 
-      <Button id='addcustomerbtn' variant="contained" onClick={''}>Insert Address</Button>
+      <Button id='addaddressbtn' variant="contained" onClick={''}>Insert Address</Button>
 
     </Box>
 

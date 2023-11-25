@@ -57,6 +57,24 @@
     box-shadow: 2px 2px silver;
     color: #1F6357;
 }
+.addresstitle{
+    background-color: #E5E4E2;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px silver;
+    color: #1F6357;
+    width: 280px; 
+}
+.addressbody{
+    background-color: #E5E4E2;
+    height: 300px;
+    text-align: center;
+    color: #1F6357;
+    border-radius: 10px;
+    box-shadow: 2px 2px silver;
+    width: 280px; 
+
+}
 .popupbody{
     background-color: #E5E4E2;
     height: 490px;
@@ -64,12 +82,23 @@
     color: #1F6357;
     border-radius: 10px;
     box-shadow: 2px 2px silver;
+    
 }
 #addcustomerbtn{
     background-color: #00A36C;
     color: white;
 }
+#addaddressbtn{
+    background-color: #00A36C;
+    color: white;
+    margin-top: 22px; 
+}
 #modalbox{
+    border-radius: 10px;
+    border: none;
+}
+#addressbox{
+    width: 280px;
     border-radius: 10px;
     border: none;
 }
