@@ -20,7 +20,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import {useState} from 'react';
-import axios from 'axios';
+
 
 
 
@@ -84,9 +84,7 @@ const columns = [
     },
   ];
   
-  
 
-<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon /></IconButton>
  
   
   const rows = [];
