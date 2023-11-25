@@ -105,7 +105,7 @@ const handleOpen = () => setOpen(true);
 const handleClose = () => setOpen(false);
 
 const [update, setUpdate] = React.useState(false);
-const updateOpen = () => setUpdate(true);
+const updateOpen = (gt) => setUpdate(true);
 const updateClose = () => setUpdate(false);
 
 const [address, setAddress] = React.useState(false);
@@ -159,6 +159,37 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
   .then((json) => console.log(json));
   handleClose();
 }
+
+const updateCustomer =()=>{
+   
+  let Updatecustomer_Id = document.getElementById('upcustomer_id').value;
+  let Updatename = document.getElementById('upname').value;
+  let Updateaddress = document.getElementById('upaddress').value;
+  let Updateage = document.getElementById('upage').value;
+  let Updatenic = document.getElementById('upnic').value;
+  let Updatetelephone = document.getElementById('uptelephone').value;
+
+  var upd={
+    customer_id:Updatecustomer_Id,
+    name:Updatename,
+    address:Updateaddress,
+    age:Updateage,
+    nic:Updatenic,
+    telephone:Updatetelephone,
+  }
+  fetch("http://127.0.0.1:8000/api/customer/update/"+Updatecustomer_Id, {
+  method: 'PUT',
+  headers:{
+    'Content-type': 'application/json'
+            },
+    body:JSON.stringify(upd)
+  })
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+  updateClose();
+  
+  }
+
 
 const getCustomers = ()=>{
 
@@ -220,6 +251,7 @@ Swal.fire({
     }
   });
 }
+
 
 
   return (
@@ -292,7 +324,7 @@ Swal.fire({
       <TextField id="upnic" label="NIC" variant="outlined" />
       <TextField id="uptelephone" label="Telephone" variant="outlined" />
 
-      <Button id='addcustomerbtn' variant="contained" onClick={''}>Update Customer</Button>
+      <Button id='addcustomerbtn' variant="contained" onClick={()=>{updateCustomer()}}>Update Customer</Button>
 
     </Box>
 
