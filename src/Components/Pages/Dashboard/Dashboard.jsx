@@ -177,7 +177,7 @@ const getCustomers = ()=>{
     nic:val.nic,
     telephone:val.telephone,
     update:<IconButton onClick={()=>{updateOpen()}} aria-label="delete" size="large"><UpdateIcon/></IconButton>,
-    del:<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon/></IconButton>,
+    del:<IconButton onClick={()=>{deleteCustomer(val.id)}} aria-label="delete" size="large"><DeleteIcon/></IconButton>,
               })
           })
           setCustomers(array);
@@ -187,21 +187,15 @@ const getCustomers = ()=>{
       .catch(function (error){
           console.log(error)
       })
-      
-// fetch("http://127.0.0.1:8000/api/customer")
-// .then(response => response.json())
-// // .then((json) => console.log(json))
-// .then(json => setCustomers(json))
-// .finally(() => {
-//   })
   
 }
 
-const deleteCustomer =()=>{
-fetch("http://192.168.8.142:8070/student/delete/"+customerDelete, {
+const deleteCustomer =(cus_id)=>{
+console.log(cus_id);
+let cus = cus_id;
+fetch("http://127.0.0.1:8000/api/customer/delete/"+cus, {
 method: 'DELETE',
 });
-
 }
 
 
