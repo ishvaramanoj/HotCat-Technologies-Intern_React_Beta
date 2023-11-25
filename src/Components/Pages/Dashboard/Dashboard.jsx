@@ -169,7 +169,8 @@ const getCustomers = ()=>{
   const array = [];
   console.log(response);
   response.forEach((val)=>{
-  array.push({         
+  array.push({
+    id:val.id,         
     address:val.address,
     name:val.name,
     age:val.age,
