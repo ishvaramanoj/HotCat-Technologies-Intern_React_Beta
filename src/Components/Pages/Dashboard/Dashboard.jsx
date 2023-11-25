@@ -20,6 +20,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
 import {useState} from 'react';
+import {useEffect} from 'react';
 
 
 
@@ -147,7 +148,7 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
   body:JSON.stringify(obj)
   }).then((response) => response.json())
   .then((json) => console.log(json));
-  getCustomers()
+  handleClose();
 }
 
 const getCustomers = ()=>{
