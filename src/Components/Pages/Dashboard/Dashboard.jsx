@@ -98,6 +98,10 @@ const [open, setOpen] = React.useState(false);
 const handleOpen = () => setOpen(true);
 const handleClose = () => setOpen(false);
 
+const [update, setUpdate] = React.useState(false);
+const updateOpen = () => setUpdate(true);
+const updateClose = () => setUpdate(false);
+
 
 
 const navigate = useNavigate()
@@ -166,7 +170,7 @@ const getCustomers = ()=>{
     age:val.age,
     nic:val.nic,
     telephone:val.telephone,
-    update:<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon/></IconButton>,
+    update:<IconButton onClick={()=>{updateOpen()}} aria-label="delete" size="large"><UpdateIcon/></IconButton>,
     del:<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon/></IconButton>,
               })
           })
@@ -235,6 +239,44 @@ method: 'DELETE',
           </Typography>
         </Box>
       </Modal>
+
+
+
+      <Modal
+        open={update}
+        onClose={updateClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} id='modalbox'>
+          <Typography id="modal-modal-title" variant="h6" component="h2" className='popuptitle'>
+            Customer Update
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} className='popupbody'>
+            
+          <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <TextField id="upcustomer_id" label="Customer Id" variant="outlined" />
+      <TextField id="upname" label="Name" variant="outlined" />
+      <TextField id="upaddress" label="Address" variant="outlined" />
+      <TextField id="upage" label="Age" variant="outlined" />
+      <TextField id="upnic" label="NIC" variant="outlined" />
+      <TextField id="uptelephone" label="Telephone" variant="outlined" />
+
+      <Button id='addcustomerbtn' variant="contained" onClick={''}>Update Customer</Button>
+
+    </Box>
+
+          </Typography>
+        </Box>
+      </Modal>
+
 
 
 
