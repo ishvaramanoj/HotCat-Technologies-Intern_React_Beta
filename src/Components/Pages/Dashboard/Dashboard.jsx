@@ -40,11 +40,15 @@ const style = {
 
 
 const columns = [
+   { id: 'id',
+   label:<b>Customer Id</b>,
+   minWidth: 80 
+   },
     { id: 'name',
      label:<b>Name</b>,
      minWidth: 170 
     },
-
+   
     { 
       id: 'address',
        label:<b>Address</b>,
@@ -193,7 +197,6 @@ const getCustomers = ()=>{
 }
 
 const deleteCustomer =()=>{
-let customerDelete = customers[0].id.value;
 fetch("http://192.168.8.142:8070/student/delete/"+customerDelete, {
 method: 'DELETE',
 });
