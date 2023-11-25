@@ -39,76 +39,57 @@ const style = {
 
 
 const columns = [
-    { id: 'name', label: 'Name', minWidth: 170 },
-    { id: 'address', label: 'Address', minWidth: 100 },
+    { id: 'name',
+     label:<b>Name</b>,
+     minWidth: 170 
+    },
+
+    { 
+      id: 'address',
+       label:<b>Address</b>,
+      minWidth: 100 
+    },
+
     {
-      id: 'age',
-      label: 'Age',
+      id:'age',
+      label: <b>Age</b>,
       minWidth: 170,
       align: 'right',
     },
 
     {
       id: 'nic',
-      label: 'N.I.C(v)',
+      label: <b>N.I.C(v)</b>,
       minWidth: 170,
       align: 'right',
     },
 
     {
       id: 'telephone',
-      label: 'Telephone',
+      label: <b>Telephone</b>,
       minWidth: 170,
       align: 'right',
     },
     {
       id: 'update',
-      label: 'Update',
+      label:<b>Update</b>,
       minWidth: 20,
       align: 'right',
     },
     {
       id: 'del',
-      label: 'Delete',
+      label: <b>Delete</b>,
       minWidth: 20,
       align: 'right',
     },
   ];
   
-  function createData(name, address, age, nic,telephone,update,del) {
-    
-    return { name, address, age, nic,telephone,update,del};
-  }
   
 
-
+<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon /></IconButton>
  
   
-  const rows = [createData('name','address','age','nic','telephone')
-    // createData('David', 'Buckingham,England', 25, 942343000,94768968561, <IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-    // </IconButton>),
-
-    // createData('Aaron', 'Auckland,NewZealand', 35, 985012083,61768348531,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-    // </IconButton>),
-
-    // createData('Jonathan', 'Dublin,Ireland', 40, 874562345,34768348765,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-    // </IconButton>),
-
-    // createData('Peter', 'Texas,USA', 33, 768975555,11768349855,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-    // </IconButton>),
-
-    // createData('Stalin', 'Moscow,Russia', 29, 875642000,25768341000,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-    // </IconButton>),
-
-    // createData('Ballack', 'Berlin,Germany', 36, 745674000,98768343400,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon />
-    // </IconButton>,<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon />
-    // </IconButton>),
-  ];
+  const rows = [];
 
 
 
@@ -187,6 +168,8 @@ const getCustomers = ()=>{
     age:val.age,
     nic:val.nic,
     telephone:val.telephone,
+    update:<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon/></IconButton>,
+    del:<IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><DeleteIcon/></IconButton>,
               })
           })
           setCustomers(array);
