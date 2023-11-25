@@ -290,7 +290,7 @@ method: 'DELETE',
       >
         <Box sx={style} id='addressbox'>
           <Typography id="modal-modal-title" variant="h6" component="h2" className='addresstitle'>
-            Customer Update
+            Enter Addresses
           </Typography>
           <Typography id="modal-modal-descriptio" sx={{ mt: 2 }} className='addressbody'>
             
