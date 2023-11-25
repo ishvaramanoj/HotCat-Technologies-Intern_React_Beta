@@ -192,8 +192,8 @@ const getCustomers = ()=>{
 
 const deleteCustomer =(cus_id)=>{
 console.log(cus_id);
-let cus = cus_id;
-fetch("http://127.0.0.1:8000/api/customer/delete/"+cus, {
+let customer_row_id = cus_id;
+fetch("http://127.0.0.1:8000/api/customer/delete/"+customer_row_id, {
 method: 'DELETE',
 });
 }
