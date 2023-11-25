@@ -107,6 +107,10 @@ const [update, setUpdate] = React.useState(false);
 const updateOpen = () => setUpdate(true);
 const updateClose = () => setUpdate(false);
 
+const [address, setAddress] = React.useState(false);
+const addressOpen = () => setAddress(true);
+const addressClose = () => setAddress(false);
+
 
 
 const navigate = useNavigate()
@@ -171,7 +175,7 @@ const getCustomers = ()=>{
   response.forEach((val)=>{
   array.push({
     id:val.id,         
-    address:[<Button id='addbtn' variant="contained">ADD</Button>,<Button id='viewbtn' variant="contained">VIEW</Button>],
+    address:[<Button id='addbtn' variant="contained" onClick={addressOpen}>ADD</Button>,<Button id='viewbtn' variant="contained">VIEW</Button>],
     name:val.name,
     age:val.age,
     nic:val.nic,
@@ -230,6 +234,7 @@ method: 'DELETE',
       <TextField id="age" label="Age" variant="outlined" />
       <TextField id="nic" label="NIC" variant="outlined" />
       <TextField id="telephone" label="Telephone" variant="outlined" />
+      
 
       <Button id='addcustomerbtn' variant="contained" onClick={()=>{AddCustomer()}}>Add Customer</Button>
 
@@ -269,6 +274,40 @@ method: 'DELETE',
       <TextField id="uptelephone" label="Telephone" variant="outlined" />
 
       <Button id='addcustomerbtn' variant="contained" onClick={''}>Update Customer</Button>
+
+    </Box>
+
+          </Typography>
+        </Box>
+      </Modal>
+
+
+      <Modal
+        open={address}
+        onClose={addressClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} id='modalbox'>
+          <Typography id="modal-modal-title" variant="h6" component="h2" className='addresstitle'>
+            Customer Update
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }} className='addressbody'>
+            
+          <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <TextField id="address_one" label="Address 1" variant="outlined" />
+      <TextField id="address_two" label="Address 2" variant="outlined" />
+      <TextField id="address_three" label="Address 3" variant="outlined" />
+      
+
+      <Button id='addcustomerbtn' variant="contained" onClick={''}>Insert Address</Button>
 
     </Box>
 
