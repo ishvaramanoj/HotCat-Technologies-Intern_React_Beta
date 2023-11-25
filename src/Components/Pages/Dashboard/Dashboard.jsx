@@ -177,6 +177,17 @@ const updateCustomer =()=>{
     nic:Updatenic,
     telephone:Updatetelephone,
   }
+  updateClose();
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You will change customer data",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, update it!"
+  }).then((result) => {
+    if (result.isConfirmed) {    
   fetch("http://127.0.0.1:8000/api/customer/update/"+Updatecustomer_Id, {
   method: 'PUT',
   headers:{
@@ -186,7 +197,16 @@ const updateCustomer =()=>{
   })
   .then((response) => response.json())
   .then((json) => console.log(json));
-  updateClose();
+  
+
+Swal.fire({
+      title: "Updated!",
+      text: "Customer has been updated.",
+      icon: "success"
+      });
+    }
+  });
+ 
   
   }
 
