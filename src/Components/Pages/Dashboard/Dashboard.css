@@ -80,4 +80,11 @@
 .cstbl{
     width: 200px;
 }
+#viewbtn{
+    background-color: #00A36C;
+    margin-left: 5px;
+}
+#addbtn{
+    background-color: #307D7E;
+}
 

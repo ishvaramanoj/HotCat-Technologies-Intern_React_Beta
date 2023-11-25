@@ -171,7 +171,7 @@ const getCustomers = ()=>{
   response.forEach((val)=>{
   array.push({
     id:val.id,         
-    address:val.address,
+    address:[<Button id='addbtn' variant="contained">ADD</Button>,<Button id='viewbtn' variant="contained">VIEW</Button>],
     name:val.name,
     age:val.age,
     nic:val.nic,
