@@ -163,15 +163,10 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
 
 const insertAddress =()=>{
 
-
 let C_id = document.getElementById('c_id').value;
 let Address_one = document.getElementById('address_one').value;
 
 var ad = {address:Address_one}
-
-console.log(ad);
-
-
 fetch("http://127.0.0.1:8000/api/customer/insert/"+C_id,{
   method:"POST",
   headers:{
@@ -181,8 +176,6 @@ fetch("http://127.0.0.1:8000/api/customer/insert/"+C_id,{
   }).then((response) => response.json())
   .then((json) => console.log(json));
   addressClose();
-
-
 }
 
 
