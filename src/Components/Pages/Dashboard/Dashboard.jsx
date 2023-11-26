@@ -112,6 +112,10 @@ const [address, setAddress] = React.useState(false);
 const addressOpen = () => setAddress(true);
 const addressClose = () => setAddress(false);
 
+const [view, setView] = React.useState(false);
+const viewOpen = () => setView(true);
+const viewClose = () => setView(false);
+
 
 
 const navigate = useNavigate()
@@ -247,7 +251,7 @@ const getCustomers = ()=>{
   response.forEach((val)=>{
   array.push({
     id:val.id,         
-    address:[<Button id='addbtn' variant="contained" onClick={addressOpen}>ADD</Button>,<Button id='viewbtn' variant="contained">VIEW</Button>],
+    address:[<Button id='addbtn' variant="contained" onClick={addressOpen}>ADD</Button>,<Button id='viewbtn' variant="contained"  onClick={viewOpen}>VIEW</Button>],
     name:val.name,
     age:val.age,
     nic:val.nic,
@@ -398,6 +402,35 @@ Swal.fire({
       
 
       <Button id='addaddressbtn' variant="contained" onClick={()=>{insertAddress()}}>Insert Address</Button>
+
+    </Box>
+
+          </Typography>
+        </Box>
+      </Modal>
+
+
+      <Modal
+        open={view}
+        onClose={viewClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style} id='addressbox'>
+          <Typography id="modal-modal-title" variant="h6" component="h2" className='addresstitle'>
+            Customer Addresses
+          </Typography>
+          <Typography id="modal-modal-descriptio" sx={{ mt: 2 }} className='addressbody'>
+            
+          <Box
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '25ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <TextField id="c_id" label="Customer Id" variant="outlined" />
 
     </Box>
 
