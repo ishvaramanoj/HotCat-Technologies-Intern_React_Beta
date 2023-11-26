@@ -160,6 +160,33 @@ fetch("http://127.0.0.1:8000/api/customer/add",{
   handleClose();
 }
 
+
+const insertAddress =()=>{
+
+
+let C_id = document.getElementById('c_id').value;
+let Address_one = document.getElementById('address_one').value;
+
+var ad = {address:Address_one}
+
+console.log(ad);
+
+
+fetch("http://127.0.0.1:8000/api/customer/insert/"+C_id,{
+  method:"POST",
+  headers:{
+  'Content-type': 'application/json'
+          },
+  body:JSON.stringify(ad)
+  }).then((response) => response.json())
+  .then((json) => console.log(json));
+  addressClose();
+
+
+}
+
+
+
 const updateCustomer =()=>{
    
   let Updatecustomer_Id = document.getElementById('upcustomer_id').value;
@@ -373,12 +400,11 @@ Swal.fire({
       noValidate
       autoComplete="off"
     >
-      <TextField id="address_one" label="Address 1" variant="outlined" />
-      <TextField id="address_two" label="Address 2" variant="outlined" />
-      <TextField id="address_three" label="Address 3" variant="outlined" />
+      <TextField id="c_id" label="Customer Id" variant="outlined" />
+      <TextField id="address_one" label="Enter Address" variant="outlined" />
       
 
-      <Button id='addaddressbtn' variant="contained" onClick={''}>Insert Address</Button>
+      <Button id='addaddressbtn' variant="contained" onClick={()=>{insertAddress()}}>Insert Address</Button>
 
     </Box>
 
