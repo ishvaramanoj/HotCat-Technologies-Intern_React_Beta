@@ -462,7 +462,7 @@ Swal.fire({
       autoComplete="off"
     >
       
-      <table border={1} class="customermaintable">
+      <table border={0} className="customermaintable">
             <tr className="cstbl">
              {/* <th>Customer Address </th> */}
             </tr>
