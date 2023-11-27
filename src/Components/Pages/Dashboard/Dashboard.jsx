@@ -100,6 +100,9 @@ const columns = [
 const Dashboard=()=> {
 
 const [customers, setCustomers] = useState([])
+const [stores,setStores] = useState([])
+const [display,setDisplay]= useState()
+
 const [open, setOpen] = React.useState(false);
 const handleOpen = () => setOpen(true);
 const handleClose = () => setOpen(false);
@@ -251,7 +254,7 @@ const getCustomers = ()=>{
   response.forEach((val)=>{
   array.push({
     id:val.id,         
-    address:[<Button id='addbtn' variant="contained" onClick={addressOpen}>ADD</Button>,<Button id='viewbtn' variant="contained"  onClick={viewOpen}>VIEW</Button>],
+    address:[<Button id='addbtn' variant="contained" onClick={addressOpen}>ADD</Button>,<Button id='viewbtn' variant="contained"  onClick={()=>{customerAddresses(val.id)}}>VIEW</Button>],
     name:val.name,
     age:val.age,
     nic:val.nic,
@@ -269,6 +272,34 @@ const getCustomers = ()=>{
       })
   
 }
+
+const event = (ev)=>{
+// viewOpen(true);
+setDisplay(ev);
+
+}
+
+const customerAddresses = (iq_id)=>{
+  let ctad= iq_id;
+  console.log(ctad);
+  fetch('http://127.0.0.1:8000/api/customer/get/'+ctad, {
+    method: 'Get',
+    headers: {
+    'Accept': 'application/json',
+    }
+  })
+  .then(response => response.json())
+  .then((response)=> {
+  console.log(response);
+  setStores(response);
+      })
+      .catch(function (error){
+          console.log(error)
+      })
+      viewOpen(true);
+    }
+
+
 
 const deleteCustomer =(cus_id)=>{
 
@@ -420,7 +451,7 @@ Swal.fire({
           <Typography id="modal-modal-title" variant="h6" component="h2" className='addresstitle'>
             Customer Addresses
           </Typography>
-          <Typography id="modal-modal-descriptio" sx={{ mt: 2 }} className='addressbody'>
+          <Typography id="modal-modal-descriptio" sx={{ mt: 2 }} className ='viewbody'>
             
           <Box
       component="form"
@@ -430,8 +461,17 @@ Swal.fire({
       noValidate
       autoComplete="off"
     >
-      <TextField id="c_id" label="Customer Id" variant="outlined" />
-
+      {/* <TextField id="c_id" label="Customer Id" variant="outlined" />  */}
+      <table border={1} class="customermaintable">
+            <tr className="cstbl">
+             <th>ID </th>
+            </tr>
+            {stores.map(store => (
+              <tr key={store.id} class="subtopics">
+                <th>{store.address}</th>
+              </tr>
+            ))}  
+          </table> 
     </Box>
 
           </Typography>
@@ -459,34 +499,7 @@ Swal.fire({
 
 <div className='table'>
 
-{/* <table border={1} class="customermaintable">
-            <tr className="cstbl">
-             <th>ID </th>
-              <th>CustomerID </th>
-              <th>NAME</th>
-              <th>ADDRESS</th>
-              <th>AGE </th>
-              <th>NIC </th>
-              <th>TELEPHONE </th>
-              <th>UPDATE</th>
-              <th>DELETE </th>
-            </tr>
-            <th></th>
-            {customers.map(customer => (
-              <tr key={customer.id} class="subtopics">
-                <th>{customer.id}</th>
-                <th>{customer.customer_id}</th>
-                <th>{customer.name}</th>
-                <th>{customer.address}</th>
-                <th>{customer.age}</th>
-                <th>{customer.nic}</th>
-                <th>{customer.telephone}</th>
-                <th><IconButton onClick={()=>{alert()}} aria-label="delete" size="large"><UpdateIcon /></IconButton></th>
-                <th><IconButton onClick={()=>{deleteCustomer(customer.id)}} aria-label="delete" size="large"><DeleteIcon /></IconButton></th>
-              </tr>
-            ))}
-            
-          </table> */}
+
 
 
 <Paper sx={{ width: '100%', overflow: 'hidden' }}>
