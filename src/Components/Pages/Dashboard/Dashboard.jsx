@@ -461,10 +461,10 @@ Swal.fire({
       noValidate
       autoComplete="off"
     >
-      {/* <TextField id="c_id" label="Customer Id" variant="outlined" />  */}
+      
       <table border={1} class="customermaintable">
             <tr className="cstbl">
-             <th>ID </th>
+             {/* <th>Customer Address </th> */}
             </tr>
             {stores.map(store => (
               <tr key={store.id} class="subtopics">
